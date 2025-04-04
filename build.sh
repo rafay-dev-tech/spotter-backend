@@ -4,8 +4,8 @@ set -o errexit
 
 pip install -r requirements.txt
 
-pyhton manage.py collectstatic --no-input 
+pyhton3 manage.py collectstatic --no-input 
 
-pyhton manage.py migrate
+pyhton3 manage.py migrate
 
 
