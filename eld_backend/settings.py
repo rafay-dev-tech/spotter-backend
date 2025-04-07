@@ -71,7 +71,7 @@ CORS_ALLOW_ALL_ORIGINS = True  # Configure appropriately for production
 
 CORS_ALLOWED_ORIGINS = [
     "https://spotter-django-backend-rafay-dev-tech-rafay-dev-techs-projects.vercel.app",
-    "https://spotter-frontend-lime.vercel.app",
+    "https://spotter-frontend-lime.vercel.app/",
     "https://spotter-frontend-git-main-rafay-dev-techs-projects.vercel.app/"
 ]
 
