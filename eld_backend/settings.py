@@ -69,7 +69,7 @@ ASGI_APPLICATION = 'api.asgi:application'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-CORS_ALLOW_ALL_ORIGINS = True  # Configure appropriately for production
+CORS_ALLOW_ALL_ORIGINS = False  # Configure appropriately for production
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
