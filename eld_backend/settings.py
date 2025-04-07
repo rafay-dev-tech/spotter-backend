@@ -13,7 +13,8 @@ DEBUG = os.getenv('DEBUG', 'True') == 'True'
 ALLOWED_HOSTS = ['*']  # Configure appropriately for production
 
 CORS_ALLOWED_ORIGINS = [
-    "https://spotter-django-backend-rafay-dev-tech-rafay-dev-techs-projects.vercel.app"
+    "https://spotter-django-backend-rafay-dev-tech-rafay-dev-techs-projects.vercel.app",
+    "https://spotter-frontend-lime.vercel.app"
 ]
 
 INSTALLED_APPS = [
