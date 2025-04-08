@@ -4,12 +4,7 @@
         {
             "src":"api/asgi.py",
             "use":"@vercel/python",
-            "config":{"maxLambdaSize":"15mb", "runtime":"python3"}
-        },
-        {
-            "src":"build_file.sh",
-            "use":"@vercel/static-build",
-            "config":{"distDir":"staticfiles_build"}
+            "config":{"maxLambdaSize":"15mb", "runtime":"python3.12", "buildCommand":"bash build_files.sh"}
         }
     ],
     "routes": [
