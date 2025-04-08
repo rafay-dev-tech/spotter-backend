@@ -54,14 +54,21 @@ TEMPLATES = [
     },
 ]
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 ASGI_APPLICATION = 'api.asgi:application'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "postgres",
+        'USER': "postgres.gkmsqpabdwjiyljrgfpt",
+        'PASSWORD': "IA1eomvDkwuHWrEa",
+        'HOST': "aws-0-us-east-1.pooler.supabase.com",
+        'PORT': "5432",
+    }
+
+}
+
 # Add these static file settings
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
