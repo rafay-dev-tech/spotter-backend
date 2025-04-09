@@ -50,9 +50,7 @@ class TripViewSet(viewsets.ModelViewSet):
             except ValueError as e:
                 error_message = str(e)
                 if "cannot be the same" in error_message:
-                    if "Current location and pickup location" in error_message:
-                        errors.append("Pickup location must be different from current location")
-                    elif "Pickup location and destination" in error_message:
+                    if "Pickup location and destination" in error_message:
                         errors.append("Destination must be different from pickup location")
                     elif "Current location and destination" in error_message:
                         errors.append("Destination must be different from current location")
