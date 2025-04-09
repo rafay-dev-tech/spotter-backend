@@ -61,12 +61,14 @@ class RoutePlanner:
                 raise ValueError("Could not find coordinates for one or more locations")
 
             # Check for duplicate locations
-            if origin == pickup:
-                raise ValueError("Current location and pickup location cannot be the same")
             if pickup == destination:
                 raise ValueError("Pickup location and destination cannot be the same")
             if origin == destination:
                 raise ValueError("Current location and destination cannot be the same")
+
+            # If current and pickup locations are the same, use the same coordinates
+            if origin == pickup:
+                pickup_coords = origin_coords
 
             # Calculate routes
             waypoints = [
