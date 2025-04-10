@@ -14,8 +14,6 @@ __pycache__/
 
 # Local settings
 /local_settings.py
-/.env
-.env.*
 
 # Django media / static files
 media/
@@ -23,7 +21,6 @@ staticfiles/
 static/
 
 # VS Code
-.vscode/
 
 # Python virtual environments
 venv/
@@ -64,3 +61,9 @@ docs/_build/
 pip-log.txt
 pip-delete-this-directory.txt
 .vercel
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+branch_structure.json
+config.bat
+node_modules
